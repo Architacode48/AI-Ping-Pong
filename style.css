@@ -1,37 +1,35 @@
-body
-{
-  background-size:cover;
-  background-position: center;
-}
-.heading{
-    width:100%;
-    text-align:left;
-  
-  }
-  .heading h3{
-      display:inline;
-  }
-  .heading button{
-      float:right;
-      border: 1px solid white;
-  }
-  #mario{
-      width:100%;
-  }
-  h4{
-      background-color:chocolate;
-      line-height:3;
-      margin:0px;
-      color:cornsilk;
-      font-weight: lighter;
-  }
-  .heading a{
-     border:2px solid white;
-     font-size:20px;
-     color:white;
-  
-  }
-  .b1{
-      width:100px;
-      font-size:28px;
-  }
+.heading h3 {
+        display: inline;
+        width:100%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size:35px;
+    }
+    
+    .heading button {
+        float: right;
+        border: 1px solid orange;
+    }
+    
+    #start ,#status, #restart {
+    font-size: 22px;
+    }
+    
+    .modal-dialog {
+        width: 70%;
+    }
+    .modal-body {
+        text-align: left;
+        font-size: 20px;
+    }
+    h4 {
+       background-color: cyan;
+       color: yellow;
+       line-height: 2;
+      position: sticky;
+       bottom: 0px;
+    }
+    canvas {
+          border: 3px solid lime;
+          border-radius: 20px;
+          box-shadow:  5px 5px 5px red;
+      }
