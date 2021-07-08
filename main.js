@@ -1,4 +1,4 @@
-var paddle2 =10,paddle1=10;
+  var paddle2 =10,paddle1=10;
 
 var paddle1X = 10,paddle1Height = 110;
 var paddle2Y = 685,paddle2Height = 70;
@@ -23,6 +23,9 @@ rightWristX = 0;
 scoreRightWrist = 0;
 
 game_status = "";
+function startGame(){
+  document.getElementById("status").innerHTML=" Game Is Loading "
+}
 
  function preload() {
   ball_touch_paddel = loadSound("ball_touch_paddel.wav");
@@ -62,17 +65,12 @@ function startGame() {
 }
 
 function draw() {
-
+  if(game_status == "start"){
   background(0); 
   image(video, 0, 0, 700, 600);
-
   fill("black");
   stroke("black");
   rect(680,0,20,700);
-
-  fill("black");
-  stroke("black");
-  rect(0,0,20,700);
 
   if(scoreRightWrist > 0.2)
   {
@@ -80,11 +78,6 @@ function draw() {
     stroke("red");
     circle(rightWristX, rightWristY, 30);
   }
-
-  if(game_status == "start")
-  {
-    document.getElementById("status").innerHTML = "Game Is Loaded";
-
     paddleInCanvas();
 
     fill(250,0,0);
@@ -194,4 +187,5 @@ function paddleInCanvas() {
 function restart() {
   pcscore = 0;
   loop();
+  
 }
